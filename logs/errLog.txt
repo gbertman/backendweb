@@ -1,0 +1,4 @@
+20230423	14:29:03	a1d9c726-b4df-455b-83c6-1814be31ed3a	TypeError: Assignment to constant variable.
+20230423	14:40:15	99c02984-de3d-402d-bdf1-e6c8014ee1c3	ReferenceError: capitol is not defined
+20230423	14:43:20	607f63fb-dd58-42b2-85f3-6969b8d04225	ReferenceError: capital_city is not defined
+20230423	14:49:53	458b7726-f41b-4297-b211-8674bdad390e	RangeError: Invalid status code: AK
