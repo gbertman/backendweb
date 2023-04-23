@@ -2,3 +2,7 @@
 20230423	14:40:15	99c02984-de3d-402d-bdf1-e6c8014ee1c3	ReferenceError: capitol is not defined
 20230423	14:43:20	607f63fb-dd58-42b2-85f3-6969b8d04225	ReferenceError: capital_city is not defined
 20230423	14:49:53	458b7726-f41b-4297-b211-8674bdad390e	RangeError: Invalid status code: AK
+20230423	15:36:59	eb66087e-3bea-4027-8ee3-796a71827df6	TypeError: req.params.stateId.toUppperCase is not a function
+20230423	15:44:31	bf623b85-3486-4421-9cf0-9545eee083ec	TypeError: req.params.stateId.toUppperCase is not a function
+20230423	15:52:45	5457cef3-e37f-4c87-b5fe-3d51d9eae6d0	ReferenceError: toUpper is not defined
+20230423	15:52:46	0c9b7cbb-d036-4e04-9daa-487592ff9004	ReferenceError: toUpper is not defined

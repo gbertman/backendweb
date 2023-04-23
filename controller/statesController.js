@@ -1,16 +1,21 @@
 const data = {};
 data.states = require('../data/statesData.json');
 
+
+const getStateObj = (paramInfo) => {
+    return data.states.find(sta => sta.code === paramInfo.toUpperCase());
+}
+
 const getStates = (req, res) => {
     res.json(data.states);
 }
 
 const getState = (req, res) => {
-    const state = data.states.find(sta => sta.code === req.params.stateId.toUppperCase());
-    if (!state) {
+    const stateInfo = getStateObj(req.params.stateId);
+    if (!stateInfo) {
         return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }
-    res.json(state);
+    res.json(stateInfo);
 }
 
 const getFunFact = (req, res) => {
@@ -30,7 +35,7 @@ const deleteFunFact = (req, res) => {
 }
 
 const getCapital = (req, res) => {
-    const stateInfo = data.states.find(sta => sta.code === req.params.stateId.toUppperCase());
+    const stateInfo = getStateObj(req.params.stateId);
     if (!stateInfo) {
         return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }
@@ -41,7 +46,7 @@ const getCapital = (req, res) => {
 }
 
 const getNickname = (req, res) => {
-    const stateInfo = data.states.find(sta => sta.code === req.params.stateId);
+    const stateInfo = getStateObj(req.params.stateId);
     if (!stateInfo) {
         return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }
@@ -52,7 +57,7 @@ const getNickname = (req, res) => {
 }
 
 const getPopulation = (req, res) => {
-    const stateInfo = data.states.find(sta => sta.code === req.params.stateId.toUppperCase());
+    const stateInfo = getStateObj(req.params.stateId);
     if (!stateInfo) {
         return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }
@@ -63,7 +68,7 @@ const getPopulation = (req, res) => {
 }
 
 const getAdmission = (req, res) => {
-    const stateInfo = data.states.find(sta => sta.code === req.params.stateId.toUppperCase());
+    const stateInfo = getStateObj(req.params.stateId);
     if (!stateInfo) {
         return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }

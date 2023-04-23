@@ -13,3 +13,13 @@
 20230423	14:49:53	8e753ab2-1d36-4643-9a68-5c4f02ff1f32	GET	undefined	/states/AK/capital
 20230423	14:51:26	22fd3d14-4dfc-4693-9ac8-80ddff72f45b	GET	undefined	/states/AK/capital
 20230423	14:55:21	16968850-f9d5-4bd7-8956-36a64f40a701	GET	undefined	/states/AK/capital
+20230423	15:36:59	27588dc5-7691-44e1-8a15-79e9e9a06a1d	GET	undefined	/states/Ak/capital
+20230423	15:44:31	2e9a8c7f-598a-458c-b61a-87830447d451	GET	undefined	/states/Ak/capital
+20230423	15:45:08	ea05386a-4850-4e0f-9664-86cc77e23745	GET	undefined	/states/Ak/capital
+20230423	15:45:52	bdbdea01-a3a0-48c1-bb95-4fae282d7fe7	GET	undefined	/states/Ak/capital
+20230423	15:46:32	22599948-a0a9-4e24-9c45-156314427bb0	GET	undefined	/states/Ak/capital
+20230423	15:48:44	b075c0c6-7662-47cb-a36d-81dd84341311	GET	undefined	/states/Ak/capital
+20230423	15:48:51	44aa4060-7880-4f35-8b12-c23dfde0ee05	GET	undefined	/states/ak/capital
+20230423	15:52:45	a451cc53-f624-46da-abfe-9694368a2382	GET	undefined	/states/ak/capital
+20230423	15:52:46	45125fed-df81-4a53-9ee8-c23337667457	GET	undefined	/states/ak/capital
+20230423	15:53:02	9e358818-38ba-4707-9ded-0fb95d87c888	GET	undefined	/states/ak/capital
