@@ -6,9 +6,9 @@ const getStates = (req, res) => {
 }
 
 const getState = (req, res) => {
-    const state = data.states.find(sta => sta.code === req.params.stateId);
+    const state = data.states.find(sta => sta.code === req.params.stateId.toUppperCase());
     if (!state) {
-        return res.status(400).json({ "message": `State ID ${req.params.stateId} not found` });
+        return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }
     res.json(state);
 }
@@ -30,9 +30,9 @@ const deleteFunFact = (req, res) => {
 }
 
 const getCapital = (req, res) => {
-    const stateInfo = data.states.find(sta => sta.code === req.params.stateId);
+    const stateInfo = data.states.find(sta => sta.code === req.params.stateId.toUppperCase());
     if (!stateInfo) {
-        return res.status(400).json({ "message": `State ID ${req.params.stateId} not found` });
+        return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }
     const state = {};
     state.state = stateInfo.state;
@@ -43,7 +43,7 @@ const getCapital = (req, res) => {
 const getNickname = (req, res) => {
     const stateInfo = data.states.find(sta => sta.code === req.params.stateId);
     if (!stateInfo) {
-        return res.status(400).json({ "message": `State ID ${req.params.stateId} not found` });
+        return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }
     const state = {};
     state.state = stateInfo.state;
@@ -52,9 +52,9 @@ const getNickname = (req, res) => {
 }
 
 const getPopulation = (req, res) => {
-    const stateInfo = data.states.find(sta => sta.code === req.params.stateId);
+    const stateInfo = data.states.find(sta => sta.code === req.params.stateId.toUppperCase());
     if (!stateInfo) {
-        return res.status(400).json({ "message": `State ID ${req.params.stateId} not found` });
+        return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }
     const state = {};
     state.state = stateInfo.state;
@@ -63,9 +63,9 @@ const getPopulation = (req, res) => {
 }
 
 const getAdmission = (req, res) => {
-    const stateInfo = data.states.find(sta => sta.code === req.params.stateId);
+    const stateInfo = data.states.find(sta => sta.code === req.params.stateId.toUppperCase());
     if (!stateInfo) {
-        return res.status(400).json({ "message": `State ID ${req.params.stateId} not found` });
+        return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }
     const state = {};
     state.state = stateInfo.state;
