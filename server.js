@@ -6,8 +6,11 @@ const cors = require("cors");
 //const corsOptions = require("./config/corsOptions.js");
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
-const exp = require("constants");
+const mongoose = require('mongoose');
+const connectDB = require("./config/dbConns");
 
+//connect mongodb
+connectDB()
 
 const PORT = process.env.PORT || 3500;
 
@@ -41,4 +44,9 @@ app.all("*", (req, res) => {
 
 app.use(errorHandler);
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+mongoose.connection.once('open', () => {
+    console.log("Connected to MongoDB");
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+});
+
+

@@ -6,3 +6,4 @@
 20230423	15:44:31	bf623b85-3486-4421-9cf0-9545eee083ec	TypeError: req.params.stateId.toUppperCase is not a function
 20230423	15:52:45	5457cef3-e37f-4c87-b5fe-3d51d9eae6d0	ReferenceError: toUpper is not defined
 20230423	15:52:46	0c9b7cbb-d036-4e04-9daa-487592ff9004	ReferenceError: toUpper is not defined
+20230423	22:01:39	fa1635e9-4e52-4ae7-9fb9-c09c30223131	SyntaxError: Unexpected string in JSON at position 15
