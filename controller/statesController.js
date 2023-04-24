@@ -6,6 +6,8 @@ const getStateObj = (paramInfo) => {
     return data.states.find(sta => sta.code === paramInfo.toUpperCase());
 }
 
+const fixNum = (population) => { return population.toLocaleString('US-en'); }
+
 const getStates = (req, res) => {
     res.json(data.states);
 }
@@ -63,7 +65,7 @@ const getPopulation = (req, res) => {
     }
     const state = {};
     state.state = stateInfo.state;
-    state.population = stateInfo.population;
+    state.population = fixNum(stateInfo.population);
     res.json(state);
 }
 

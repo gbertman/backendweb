@@ -23,3 +23,6 @@
 20230423	15:52:45	a451cc53-f624-46da-abfe-9694368a2382	GET	undefined	/states/ak/capital
 20230423	15:52:46	45125fed-df81-4a53-9ee8-c23337667457	GET	undefined	/states/ak/capital
 20230423	15:53:02	9e358818-38ba-4707-9ded-0fb95d87c888	GET	undefined	/states/ak/capital
+20230423	16:04:31	20ee0057-1382-4653-9f9a-bf9828ea400e	GET	undefined	/states/ak/population
+20230423	19:38:51	8545ee22-4126-4335-8e85-36c1f3a1c2b8	GET	undefined	/states/ak/population
+20230423	19:39:00	4c09d978-7953-4d2a-8517-4808fb4d4fa2	GET	undefined	/states/Ks/population
