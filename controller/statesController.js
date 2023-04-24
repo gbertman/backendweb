@@ -10,10 +10,14 @@ const getStateObj = (paramInfo) => {
 const fixNum = (population) => { return population.toLocaleString('US-en'); }
 
 const getStates = (req, res) => {
-    if (!req?.param?.contig === false)
-        res.json(data.states);
-    else if (req.param.contig === true)
-        res.json(data.states);
+    if (req.query.contig === 'false') {
+
+        res.json();
+    }
+    else if (req.query.contig === 'true') {
+        res.json();
+
+    }
     else {
         res.json(data.states);
     }
@@ -50,16 +54,17 @@ const createFunFact = async (req, res) => {
             return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
         else {
             try {
-                const result = await statesFunFacts.create({ stateCode: req.param.stateId, funfacts: req.body.funfacts }).exec();
-                res.json(result);
+                const result = await statesFunFacts.create({ stateCode: req.params.stateId, funfacts: req.body.funfacts });
+                res.status(201).json(result);
             } catch (err) {
                 console.log(err);
             }
         }
+    } else {
+        dataFacts.funfacts.push(...req.body.funfacts);
+        const results = await dataFacts.save();
+        res.status(201).json(results);
     }
-    dataFacts.funfacts.push(...req.body.funfacts);
-    const results = await dataFacts.save();
-    res.json(results);
 }
 
 const updateFunFact = async (req, res) => {
