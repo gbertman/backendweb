@@ -57,3 +57,11 @@
 20230423	22:32:17	4b52917a-384f-4f47-ab2b-05269549aee9	DELETE	undefined	/states/OK/funfact
 20230423	22:38:35	66bdba4d-93b7-438e-94b2-ad9f1a4d88c1	DELETE	undefined	/states/OK/funfact
 20230423	22:39:51	9029571f-2e51-4930-8e57-1a513bbc0bec	DELETE	undefined	/states/OK/funfact
+20230424	09:06:33	6cb2b258-3c59-4a43-9832-521e21af392b	GET	undefined	/states/OK/nickname
+20230424	09:06:41	9d42e518-c17b-4c81-a9b7-8b0ee4a70ad0	GET	undefined	/states/OK/nickname
+20230424	09:06:49	42dc8e08-04e5-47bf-8b04-6d79f09f950b	GET	undefined	/states/OK/population
+20230424	09:07:17	93fa87c0-b0cb-49d8-a52d-d50b70fdbc97	GET	undefined	/states/OK/population
+20230424	09:07:22	e362795f-ddfe-4b1d-89a6-2720b8daf888	GET	undefined	/states/OK/nickname
+20230424	09:07:54	4dbc83fe-e274-4583-9d87-a590e8b927f8	GET	undefined	/states/OK/funfact
+20230424	09:07:56	45fd910b-03c1-43f2-a4ee-ad076f62d78a	GET	undefined	/states/OK/funfact
+20230424	09:07:57	817ab3e9-992d-43e5-b323-e23db94f9425	GET	undefined	/states/OK/funfact

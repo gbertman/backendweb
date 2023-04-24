@@ -99,7 +99,7 @@ const getNickname = (req, res) => {
     if (!stateInfo) {
         return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }
-    res.json({ "state": state.state, "nickname": stateInfo.nickname });
+    res.json({ "state": stateInfo.state, "nickname": stateInfo.nickname });
 }
 
 const getPopulation = (req, res) => {
