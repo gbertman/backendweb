@@ -59,9 +59,13 @@ const createFunFact = async (req, res) => {
             }
         }
     } else {
-        dataFacts.funfacts.push(...req.body.funfacts);
-        const results = await dataFacts.save();
-        res.status(201).json(results);
+        try {
+            dataFacts.funfacts.push(...req.body.funfacts);
+            const results = await dataFacts.save();
+            res.status(201).json(results);
+        } catch (err) {
+            console.log(err);
+        }
     }
 }
 
@@ -70,10 +74,14 @@ const updateFunFact = async (req, res) => {
     if (!dataFacts) {
         return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }
-    if (req.body.index > 0) {
-        dataFacts.funfacts[req.body.index - 1] = req.body.funfact;
-        const results = await dataFacts.save();
-        res.json(results);
+    if (req.body.index > 0 && req.body.index < dataFacts.funfacts.length) {
+        try {
+            dataFacts.funfacts[req.body.index - 1] = req.body.funfact;
+            const results = await dataFacts.save();
+            res.json(results);
+        } catch (err) {
+            console.log(err);
+        }
     }
 }
 
@@ -82,10 +90,14 @@ const deleteFunFact = async (req, res) => {
     if (!dataFacts) {
         return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }
-    if (req.body.index > 0) {
-        dataFacts.funfacts.splice(req.body.index - 1, 1);
-        const results = await dataFacts.save();
-        res.json(results);
+    if (req.body.index > 0 && req.body.index < dataFacts.funfacts.length) {
+        try {
+            dataFacts.funfacts.splice(req.body.index - 1, 1);
+            const results = await dataFacts.save();
+            res.json(results);
+        } catch (err) {
+            console.log(err);
+        }
     }
 }
 
