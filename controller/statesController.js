@@ -50,7 +50,7 @@ const createFunFact = async (req, res) => {
     if (!req.body.funfacts) {
         return res.status(400).json({ "message": `State fun facts value required` });
     } else {
-        if (req.body.funfacts.isArray()) {
+        if (Array.isArray(req.body.funfacts)) {
             return res.status(400).json({ "message": `State fun facts value must be an array` });
         }
         else {
@@ -101,10 +101,10 @@ const updateFunFact = async (req, res) => {
                             console.log(err);
                         }
                     } else {
-                        return res.status(400).json({ "message": `No Fun Fact found at that index for ${stateInfo.code}` });
+                        return res.status(400).json({ "message": `No Fun Fact found at that index for ${stateInfo.state}` });
                     }
                 } else {
-                    return res.status(400).json({ "message": `No Fun Facts found for ${stateInfo.code}` });
+                    return res.status(400).json({ "message": `No Fun Facts found for ${stateInfo.state}` });
                 }
             } else {
                 return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
@@ -131,10 +131,10 @@ const deleteFunFact = async (req, res) => {
                     }
 
                 } else {
-                    return res.status(400).json({ "message": `No Fun Fact found at that index for ${stateInfo.code}` });
+                    return res.status(400).json({ "message": `No Fun Fact found at that index for ${stateInfo.state}` });
                 }
             } else {
-                return res.status(400).json({ "message": `No Fun Facts found for ${stateInfo.code}` });
+                return res.status(400).json({ "message": `No Fun Facts found for ${stateInfo.state}` });
             }
         } else {
             return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
