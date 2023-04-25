@@ -113,3 +113,6 @@
 20230425	16:28:58	900b1a46-c079-483e-b5f9-945a1e5bee0a	DELETE	undefined	/states/ks/funfact
 20230425	16:28:59	d2c91332-8494-4be6-a423-332caf8a0467	DELETE	undefined	/states/ks/funfact
 20230425	16:29:00	80b024a3-4749-4ff9-83ea-35522504a29d	DELETE	undefined	/states/ks/funfact
+20230425	16:33:43	204ade2c-1ff0-4ac2-8f26-e1630fabe218	DELETE	undefined	/states/ks/funfact
+20230425	16:33:54	fc7d07e2-b262-491f-bc11-adbf985f63ed	GET	undefined	/states/ks/funfact
+20230425	16:34:26	9093925a-c23d-4eb7-8542-0c4f28d41720	POST	undefined	/states/ks/funfact
