@@ -50,7 +50,7 @@ const createFunFact = async (req, res) => {
     if (!req.body.funfacts) {
         return res.status(400).json({ "message": `State fun facts value required` });
     } else {
-        if (!req.body.funfacts.length) {
+        if (req.body.funfacts.isArray()) {
             return res.status(400).json({ "message": `State fun facts value must be an array` });
         }
         else {
@@ -85,8 +85,8 @@ const updateFunFact = async (req, res) => {
     if (!req.body.index) {
         return res.status(400).json({ "message": `State fun fact index value required` });
     } else {
-        if (!req.body.funfacts) {
-            return res.status(400).json({ "message": `State fun fact index value required` });
+        if (!req.body.funfact) {
+            return res.status(400).json({ "message": `State fun fact value required` });
         } else {
             const stateInfo = getStateObj(req.params.stateId);
             if (stateInfo) {
