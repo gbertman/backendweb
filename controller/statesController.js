@@ -11,12 +11,10 @@ const fixNum = (population) => { return population.toLocaleString('US-en'); }
 
 const getStates = (req, res) => {
     if (req.query.contig === 'false') {
-
-        res.json();
+        res.json(data.states.filter((state) => state.code === "AK" || state.code === "HI"));
     }
     else if (req.query.contig === 'true') {
-        res.json();
-
+        res.json(data.states.filter((state) => state.code != "AK" && state.code != "HI"));
     }
     else {
         res.json(data.states);

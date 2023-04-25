@@ -94,3 +94,9 @@
 20230424	10:54:36	f4946c6c-ec09-494d-a487-ed49283ea2ee	POST	undefined	/states/OK/funfact
 20230424	10:55:05	12cca534-5280-4d89-a6a0-c1c5ae969f66	POST	undefined	/states/NE/funfact
 20230424	10:55:29	80d11fea-144f-4079-8e8a-5c6aa930059a	POST	undefined	/states/CO/funfact
+20230425	15:21:46	28e373bb-a529-432a-b7ef-0f2c78253917	GET	undefined	/states?contig=false
+20230425	15:22:44	c7cad6b4-8205-47e9-a3fc-081cabaef72c	GET	undefined	/states?contig=false
+20230425	15:24:50	12b8f5f7-686a-4229-814f-6ecee269e202	GET	undefined	/states?contig=false
+20230425	15:26:18	279be838-dd53-4c6f-bb88-47c24ea2aa63	GET	undefined	/states?contig=false
+20230425	15:26:28	afa1d2ed-45ab-4ddd-a254-f09e8b600fc6	GET	undefined	/states?contig=true
+20230425	15:27:13	91183843-8363-46a1-a9a4-784c5e1bea2b	GET	undefined	/states?contig=true
