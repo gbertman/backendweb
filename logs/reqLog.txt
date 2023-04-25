@@ -100,3 +100,10 @@
 20230425	15:26:18	279be838-dd53-4c6f-bb88-47c24ea2aa63	GET	undefined	/states?contig=false
 20230425	15:26:28	afa1d2ed-45ab-4ddd-a254-f09e8b600fc6	GET	undefined	/states?contig=true
 20230425	15:27:13	91183843-8363-46a1-a9a4-784c5e1bea2b	GET	undefined	/states?contig=true
+20230425	15:48:47	d585ea45-c974-4889-a4ad-5a97404bd505	GET	undefined	/states/ks/funfact
+20230425	15:49:04	02f0d756-3f38-4039-b71b-3c32a44ae927	GET	undefined	/states/ks/funfacts
+20230425	15:49:06	7ac0ef45-8b4a-447b-a2ab-ab860a6b0431	GET	undefined	/states/ks/funfact
+20230425	15:49:10	bd482616-3c20-42fa-8e62-ff7c88e0db11	GET	undefined	/states/ok/funfact
+20230425	15:49:30	20610c2e-00de-4f7d-9c98-5080b8e40e61	GET	undefined	/states/OK/funfact
+20230425	15:49:35	777c6fe3-23d1-4f2f-8316-9e5c727d74e8	GET	undefined	/states/KS/funfact
+20230425	15:49:39	e6d15ea0-d311-4861-bb90-86b1f445e26f	GET	undefined	/states/ks/funfact
