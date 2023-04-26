@@ -9,15 +9,29 @@ const getStateObj = (paramInfo) => {
 
 const fixNum = (population) => { return population.toLocaleString('US-en'); }
 
-const getStates = (req, res) => {
+const getStates = async (req, res) => {
+    let combinedData;
+    try {
+        const dataFacts = await statesFunFacts.find().exec();
+        combinedData = data.states.map((state) => {
+            const info = dataFacts.filter((fact) => fact.stateCode === state.code);
+            if (info[0] && info[0].funfacts.length > 0) {
+                state.funfacts = info[0].funfacts;
+            }
+            return state;
+        });
+    } catch (err) {
+        console.log(err);
+    }
+
     if (req.query.contig === 'false') {
-        return res.json(data.states.filter((state) => state.code === "AK" || state.code === "HI"));
+        return res.json(combinedData.filter((state) => state.code === "AK" || state.code === "HI"));
     }
     else if (req.query.contig === 'true') {
-        return res.json(data.states.filter((state) => state.code != "AK" && state.code != "HI"));
+        return res.json(combinedData.filter((state) => state.code != "AK" && state.code != "HI"));
     }
     else {
-        return res.json(data.states);
+        return res.json(combinedData);
     }
 }
 
