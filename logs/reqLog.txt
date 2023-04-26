@@ -248,3 +248,13 @@
 20230425	20:14:22	0c99f28a-9380-4114-afd0-322c607f335b	DELETE	undefined	/states/OR/funfact
 20230425	20:14:23	aa592eae-9b6b-4acc-8a85-6ab183c6258d	DELETE	undefined	/states/OR/funfact
 20230425	20:14:29	2b3c6090-2bb1-4d4d-a0df-82d121d912dc	GET	undefined	/states/OR/funfact
+20230425	20:25:24	fe9076cd-bce7-4c01-9165-6745f1815363	GET	undefined	/states/
+20230425	20:25:50	4c47953e-dd24-48f9-b23b-39f6a86aa547	GET	undefined	/states/
+20230425	20:26:05	01b1f89a-4165-4ffe-9d2d-8b250e1c370c	GET	undefined	/states/
+20230425	20:28:26	77a5bdc2-ca65-486c-838c-a6d11c76880d	GET	undefined	/states/
+20230425	20:29:43	47f0ba56-1f34-4ae4-ad64-4cf3fff671b6	GET	undefined	/states/
+20230425	20:32:00	2dff1626-aac2-4191-a8b8-9491cb310d54	GET	undefined	/states/
+20230425	20:32:46	47a945a3-958e-420a-b25f-10cec1ab5f59	GET	undefined	/states/
+20230425	20:33:45	649a2ee0-fe6f-4571-b782-7086f6188cbf	GET	undefined	/states/
+20230425	20:35:48	ffddcf1e-94ad-4498-9721-d1484965cbe4	GET	undefined	/states/
+20230425	20:36:14	76b1ce35-ed2f-403b-8380-112a33c2f3d1	GET	undefined	/states/

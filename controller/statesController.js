@@ -24,6 +24,7 @@ const getStates = async (req, res) => {
         console.log(err);
     }
 
+
     if (req.query.contig === 'false') {
         return res.json(combinedData.filter((state) => state.code === "AK" || state.code === "HI"));
     }
