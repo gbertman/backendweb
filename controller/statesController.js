@@ -51,10 +51,6 @@ const createFunFact = async (req, res) => {
         return res.status(400).json({ "message": `State fun facts value required` });
     } else {
         if (Array.isArray(req.body.funfacts)) {
-            return res.status(400).json({ "message": `State fun facts value must be an array` });
-        }
-        else {
-
             const stateInfo = getStateObj(req.params.stateId);
             if (stateInfo) {
                 const dataFacts = await statesFunFacts.findOne({ stateCode: stateInfo.code }).exec();
@@ -77,6 +73,9 @@ const createFunFact = async (req, res) => {
             } else {
                 return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
             }
+        }
+        else {
+            return res.status(400).json({ "message": `State fun facts value must be an array` });
         }
     }
 }
