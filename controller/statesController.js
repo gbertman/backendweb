@@ -27,7 +27,7 @@ const getState = async (req, res) => {
         return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
     }
     const dataFacts = await statesFunFacts.findOne({ stateCode: req.params.stateId }).exec();
-    if (dataFacts) stateInfo.funfacts = dataFacts.funfacts;
+    if (dataFacts && dataFacts.funfacts.length > 0) stateInfo.funfacts = dataFacts.funfacts;
     return res.json(stateInfo);
 }
 
@@ -35,11 +35,13 @@ const getFunFact = async (req, res) => {
     const stateInfo = getStateObj(req.params.stateId);
     if (stateInfo) {
         const dataFacts = await statesFunFacts.findOne({ stateCode: stateInfo.code }).exec();
-        if (!dataFacts)
-            return res.json({ "message": `No Fun Facts found for ${stateInfo.state}` });
-        else {
+        if (dataFacts && dataFacts.funfacts.length > 0) {
             const factNum = Math.floor(Math.random() * dataFacts.funfacts.length);
             return res.json({ "funfact": dataFacts.funfacts[factNum] });
+        }
+        else {
+            return res.json({ "message": `No Fun Facts found for ${stateInfo.state}` });
+
         }
     } else {
         return res.status(400).json({ "message": `Invalid state abbreviation parameter` });
